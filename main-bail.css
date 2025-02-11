@@ -1,0 +1,377 @@
+.header-bail-19 {
+    padding: 1em;
+    background: rgba(40, 146, 245, 1);
+    /* position: sticky;
+    top: 0;
+    z-index: 9999; */
+
+}
+
+.title-bail-19 {
+    padding: 0.5em;
+    font-size: 1.4em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.section-tabs-bail-main-19 {
+    position: relative;
+}
+
+
+
+/* TABS */
+.row-bail {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* justify-content: space-between; */
+}
+
+.aside-bail-19 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    /* background: red; */
+    position: sticky;
+    top: 0;
+    align-self: start;
+    /* Assure que le aside ne grandit pas si le contenu principal est plus long */
+    height: 100vh;
+    /* Ajuste la hauteur pour qu'il prenne toute la hauteur visible */
+    overflow-y: auto;
+    border: 1px solid rgba(88, 88, 86, 0.2)
+}
+
+.aside-article-link-tabs-19 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2em;
+}
+
+/* 
+.aside-article-link-tabs-19 a {
+    position: relative;
+    padding: 0 0.5em;
+} */
+
+.aside-article-link-tabs-19 p {
+    position: relative;
+    padding: 0.8em 2em;
+}
+
+.aside-article-link-tabs-19 p:hover {
+    background: rgb(231, 231, 231);
+}
+
+/* .aside-article-link-tabs-19 a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+} */
+.aside-article-link-tabs-19 a.active-bail-tabs p {
+    font-weight: 600;
+}
+
+.aside-article-link-tabs-19 a.active-bail-tabs p:before {
+    content: '';
+    padding: 0.4em;
+    background: rgba(3, 168, 78, 1);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-radius: 0 0.4em 0.4em 0;
+    height: 1.6em;
+}
+
+.aside-article-button-tabs-19 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-inline: 1.2em;
+}
+
+.row-button-bail {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.btn-gris {
+    border: 1px solid rgba(88, 88, 86, 0.2);
+    outline: none;
+}
+
+.btn-green {
+    background: rgba(3, 168, 78, 1);
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+/* MAIN */
+.main-bail-tabs-19 {
+    /* background: red; */
+    height: 300vh;
+    flex: 1;
+    align-self: start;
+}
+
+.form-bail-19 {
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    /* background: red; */
+    /* height: 200vh; */
+}
+
+.div-main-row-tabs {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+.div-main-row-tabs i {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+
+.title-bail-19-form-tabs {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
+.article-main-designation-de-partie-19 {
+    /* background: red; */
+    /* height: 100em; */
+    /* margin-top: 0; */
+}
+
+.article-main-objet-du-contrat-19 {
+    /* background: green; */
+    /* margin-top: 0; */
+    /* height: 100em; */
+}
+
+/* FORM */
+.form-bail-19 article {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    /* background: green; */
+    /* height: 100em; */
+}
+
+.label-form-tabs-bail-19 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.label-tabs-bail {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+    position: relative;
+    flex: 1;
+}
+
+.div-select-label-bail-col {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 1em; */
+    position: relative;
+    flex: 1;
+}
+
+.i-arrow-down-bail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: max-content;
+    margin: 0.3em;
+    margin-right: 0.7em;
+}
+
+.row-tabs-bail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:
+        wrap;
+    gap: 1.5em;
+    /* align-items: last baseline; */
+    align-items: end;
+}
+
+.label-tabs-bail span {
+    background: #fff;
+    width: max-content;
+    padding-inline: 0.8em;
+    margin-bottom: -0.8em;
+    margin-left: 1em;
+    z-index: 9999;
+    font-weight: 600;
+    /* font-size: 0.98em; */
+}
+
+.label-tabs-bail input {
+    padding: 1.2em;
+    outline: 0.5px solid rgb(182, 182, 182);
+    color: rgba(0, 0, 0, 1);
+    border: none;
+}
+
+.label-tabs-bail input:read-only {
+    cursor: pointer;
+}
+
+.label-tabs-bail textarea {
+    color: rgba(0, 0, 0, 1);
+    padding: 1.2em;
+    outline: 0.5px solid rgb(182, 182, 182);
+    border: none;
+}
+
+.col-tabs-bail {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.h2-bail-label {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.calendar-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: max-content;
+    margin: 0.3em;
+    margin-right: 0.7em;
+}
+
+/* SELECT */
+.pop-select-bail-19 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    outline: 0.5px solid rgb(182, 182, 182);
+    background: #fff;
+    z-index: 999999;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+#dropdown-bail {
+    display: none;
+}
+
+.col-select-pop-bail {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-select-pop-bail p {
+    padding: 0.8em;
+}
+
+.col-select-pop-bail p:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+/* RADIO LABEL */
+.input-radio-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.radio-label {
+    /* background: red; */
+    /* height: auto; */
+    margin-top: 0.3em;
+}
+
+.p-label-tabs-bail {
+    font-weight: 600;
+}
+
+.radio-label p {
+    padding: 1.3em 2.5em;
+    background: rgba(245, 245, 245, 1);
+    border-radius: 0.3em;
+    height: 100%;
+    text-wrap: nowrap;
+}
+
+.radio-label input {
+    display: none;
+}
+
+.radio-label input:checked+p {
+    background: rgba(40, 146, 245, 1);
+    color: #fff;
+}
+
+/* select check */
+#tags-container {
+    display: flex;
+    flex-direction: row;
+    /* position: absolute;
+    margin-top: 0.7em; */
+    flex-wrap: wrap;
+    /* margin-bottom: 0.5em; */
+    gap: 0.5em;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    background: rgba(204, 204, 204, 1);
+    color: #000000 !important;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin: 2px;
+    font-size: 14px;
+    width: max-content;
+    gap: 1em;
+}
+
+.tag .close {
+    /* margin-left: 8px; */
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* toggle area */
+.rotate-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    /* Rotation de 180 degrés */
+}
