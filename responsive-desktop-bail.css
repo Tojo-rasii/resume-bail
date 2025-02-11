@@ -1,4 +1,30 @@
 
+@media screen and (max-width: 930px) {
+.aside-bail-19 {
+        flex: 1;
+        height: 100%;
+        position: initial !important;
+        margin-bottom: 1.5em;
+        width: 100% !important;
+    }
+
+        .row-button-bail button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1em;
+            flex: 1;
+            text-align: center;
+        }
+
+   .row-bail{
+    display: flex;
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+   }
+
+
+}
 @media screen and (min-width: 1600px) {
 
 

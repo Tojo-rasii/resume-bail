@@ -109,6 +109,7 @@
     background: rgba(3, 168, 78, 1);
     border: none;
     outline: none;
+    flex: 1;
     color: #fff;
 }
 
@@ -144,7 +145,7 @@
 }
 
 .title-bail-19-form-tabs {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 600;
 }
 
@@ -234,6 +235,18 @@
     color: rgba(0, 0, 0, 1);
     border: none;
 }
+
+/* .label-tabs-bail .input-area-label {
+    padding: 1.2em;
+    outline: 0.5px solid rgb(182, 182, 182);
+    color: rgba(0, 0, 0, 1);
+    border: none;
+}
+
+.label-tabs-bail .input-area-label input {
+    border: none;
+    outline: none;
+} */
 
 .label-tabs-bail input:read-only {
     cursor: pointer;
@@ -336,7 +349,7 @@
 }
 
 /* select check */
-#tags-container {
+:is(#tags-container, #tags-container-autre-partie-logement, #tags-container-element, #tags-container-equipement) {
     display: flex;
     flex-direction: row;
     /* position: absolute;
@@ -346,7 +359,9 @@
     gap: 0.5em;
 }
 
-.tag {
+
+
+:is(.tag, .tagAutre, .tagElement, .tagEquipement) {
     display: flex;
     align-items: center;
     background: rgba(204, 204, 204, 1);
@@ -359,7 +374,7 @@
     gap: 1em;
 }
 
-.tag .close {
+:is(.tag, .tagAutre, .tagElement,.tagEquipement) .close {
     /* margin-left: 8px; */
     cursor: pointer;
     font-weight: bold;

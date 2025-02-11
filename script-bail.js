@@ -25,19 +25,31 @@ document.addEventListener("DOMContentLoaded", function () {
             let targetSection = document.getElementById(targetId);
 
             if (targetSection) {
+                let offset = 0; // Change cette valeur selon l'espacement à corriger
+
+                // Si un header fixe existe, ajuste l'offset
+                const header = document.querySelector("header"); // Remplace par ton sélecteur de header
+                if (header) {
+                    offset = header.offsetHeight;
+                }
+
                 window.scrollTo({
-                    top: targetSection.offsetTop,
+                    top: targetSection.offsetTop - offset,
                     behavior: "smooth",
                 });
 
-                // Correction immédiate après le scroll
+                // Correction du décalage après le scroll (optionnel)
                 setTimeout(() => {
-                    history.replaceState(null, null, `#${targetId}`);
-                }, 500); // Temps d'animation ajustable
+                    window.scrollTo({
+                        top: targetSection.offsetTop - offset,
+                        behavior: "instant",
+                    });
+                }, 300);
             }
         });
     });
 });
+
 
 
 document.querySelector('form').addEventListener('submit', function (e) {
