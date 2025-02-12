@@ -234,14 +234,14 @@
     /* font-size: 0.98em; */
 }
 
-.label-tabs-bail input {
+/* .label-tabs-bail input {
     padding: 1.2em;
     outline: 0.5px solid rgb(182, 182, 182);
     color: rgba(0, 0, 0, 1);
     border: none;
-}
+} */
 
-/* .label-tabs-bail .input-area-label {
+.label-tabs-bail .input-area-label {
     padding: 1.2em;
     outline: 0.5px solid rgb(182, 182, 182);
     color: rgba(0, 0, 0, 1);
@@ -251,7 +251,7 @@
 .label-tabs-bail .input-area-label input {
     border: none;
     outline: none;
-} */
+}
 
 .label-tabs-bail input:read-only {
     cursor: pointer;
