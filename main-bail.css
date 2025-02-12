@@ -163,8 +163,8 @@
     /* height: 100em; */
 }
 
-:where(.flatpickr-input, .flatpickr-mobile){
-  width: 100% !important;
+:where(.flatpickr-input, .flatpickr-mobile) {
+    width: 100% !important;
 }
 
 /* FORM */
@@ -246,10 +246,13 @@
     outline: 0.5px solid rgb(182, 182, 182);
     color: rgba(0, 0, 0, 1);
     border: none;
+    /* width: 100%; */
+
 }
 
 .label-tabs-bail .input-area-label input {
     border: none;
+    width: 100%;
     outline: none;
 }
 
@@ -379,7 +382,7 @@
     gap: 1em;
 }
 
-:is(.tag, .tagAutre, .tagElement,.tagEquipement) .close {
+:is(.tag, .tagAutre, .tagElement, .tagEquipement) .close {
     /* margin-left: 8px; */
     cursor: pointer;
     font-weight: bold;
