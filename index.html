@@ -11,6 +11,11 @@
 
     <!-- Flatpickr CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.js"></script>
 
 </head>
 
@@ -502,9 +507,19 @@ Ce dépôt ne dispensera en aucun cas le locataire du paiement du loyer et des c
 
                                 <!-- LABEL TEXT-->
                                 <div class="label-texte-tabs-bail-19" style="display: none;">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus non
-                                        maiores assumenda totam voluptate ipsum corrupti dignissimos natus! Sint?</p>
-
+                                    <div style="margin-top: 15px;">
+                                        <label for="summernote" class="form-label">Description :</label>
+                                        <textarea id="summernote"></textarea>
+                                    </div>
+                                    <button type="button" class="btn btn-primary" id="submitBtn">Récupérer les
+                                        valeurs</button>
+                                    <!-- affichage fotsiny ito-->
+                                    <div class="mt-4">
+                                        <h4>Valeurs récupérées :</h4>
+                                        <p><strong>Catégories sélectionnées :</strong> <span id="selectedTags"></span>
+                                        </p>
+                                        <p><strong>Description :</strong> <span id="content"></span></p>
+                                    </div>
                                 </div>
                             </article>
                         </form>
@@ -513,6 +528,30 @@ Ce dépôt ne dispensera en aucun cas le locataire du paiement du loyer et des c
             </div>
         </div>
     </div>
+
+
+    <script>
+        $('#summernote').summernote({
+            placeholder: 'Hello stand alone ui',
+            tabsize: 2,
+            height: 120,
+            toolbar: [
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ]
+        });
+        $("#submitBtn").click(function (e) {
+            var selectedTags = $('#tags').val();
+            var summernoteContent = $('#summernote').summernote('code');
+            $('#selectedTags').text(selectedTags ? selectedTags.join(", ") : "Aucune sélection");
+            $('#content').html(summernoteContent);
+        })
+    </script>
 
     <script src="script-bail.js"></script>
     <script src="select-pop-bail.js"></script>
