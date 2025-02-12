@@ -163,6 +163,10 @@
     /* height: 100em; */
 }
 
+:where(.flatpickr-input, .flatpickr-mobile){
+  width: 100% !important;
+}
+
 /* FORM */
 .form-bail-19 article {
     display: flex;
