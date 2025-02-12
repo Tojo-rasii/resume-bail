@@ -26,13 +26,13 @@
         flex-wrap: wrap !important;
     }
 
-    .label-tabs-bail span {
+    /* .label-tabs-bail span {
         width: max-content;
         padding-inline: 0 !important;
         margin-bottom: 0.9em !important;
         margin-left: 0 !important;
      
-    }
+    } */
 
 }
 
