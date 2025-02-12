@@ -53,9 +53,22 @@ button {
 }
 
 textarea {
-    resize: none;
+    /* resize: none; */
     font-family: 'poppins';
+    /* white-space: pre-wrap;
+    font-family: inherit; */
 
+}
+
+textarea {
+    line-height: 1.5;
+    /* Augmente l'espacement entre les lignes */
+    padding: 10px;
+    /* Ajoute de l'espace à l'intérieur du textarea */
+    text-align: justify;
+    /* Justifie le texte si besoin */
+    resize: none;
+    /* Empêche le redimensionnement si nécessaire */
 }
 
 .italic {
@@ -89,19 +102,21 @@ input:read-only {
     cursor: pointer;
 }
 
-a{
+a {
     text-decoration: none;
     color: initial;
 }
 
 body {
     background: var(--secondary);
+    overflow-x: hidden;
     /* height: 100%; */
 }
 
-.main-bail-19{
+.main-bail-19 {
     background: #fff;
     /* height: 100%; */
     margin: 0 auto;
+    width: 100%;
 
 }

@@ -119,6 +119,7 @@
     height: 300vh;
     flex: 1;
     align-self: start;
+    width: 100%;
 }
 
 .form-bail-19 {
@@ -390,3 +391,5 @@
     transform: rotate(180deg);
     /* Rotation de 180 degrés */
 }
+
+/* LAST */

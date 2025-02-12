@@ -1,6 +1,9 @@
-
 @media screen and (max-width: 930px) {
-.aside-bail-19 {
+    html {
+        font-size: 0.8em;
+    }
+
+    .aside-bail-19 {
         flex: 1;
         height: 100%;
         position: initial !important;
@@ -8,28 +11,29 @@
         width: 100% !important;
     }
 
-        .row-button-bail button{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 1em;
-            flex: 1;
-            text-align: center;
-        }
+    .row-button-bail button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
+        flex: 1;
+        text-align: center;
+    }
 
-   .row-bail{
-    display: flex;
-    flex-direction: column !important;
-    flex-wrap: wrap !important;
-   }
+    .row-bail {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: wrap !important;
+    }
 
 
 }
+
 @media screen and (min-width: 1600px) {
 
 
     .main-bail-19 {
-        margin: auto;
+        margin: 0 auto;
         width: 92em !important;
     }
 
