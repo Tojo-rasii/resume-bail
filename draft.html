@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image défilante infinie</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #111;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .scrolling-image {
+            position: absolute;
+            width: 100vw;
+            height: auto;
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="scrolling-image" src="https://via.placeholder.com/1920x600" alt="Image défilante"><img
+            class="scrolling-image" src="https://via.placeholder.com/1920x600" alt="Image défilante"><img
+            class="scrolling-image" src="https://via.placeholder.com/1920x600" alt="Image défilante">
+    </div>
+</body>
+
+</html>
