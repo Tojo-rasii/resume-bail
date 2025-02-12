@@ -1,0 +1,69 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Summernote - select2</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.9.0/dist/summernote-lite.min.js"></script>
+  </head>
+  <body>
+    <style>
+        /* cachena le result not found amle mapiditra valeur voloany (optionnel ty) */
+        .select2-results__message {
+            display: none !important;
+        }
+    </style>
+    <form id="myForm">
+        <div style="display: flex; align-items: start; flex-direction: column;">
+            <label for="tags" class="form-label">Catégories :</label>
+            <select id="tags" style="width: 100%;" multiple='multiple'>
+            </select>
+        </div>
+        <div style="margin-top: 15px;">
+            <label for="summernote" class="form-label">Description :</label>
+            <textarea id="summernote"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary" id="submitBtn">Récupérer les valeurs</button>
+    </form>
+
+    <!-- affichage fotsiny ito-->
+    <div class="mt-4">
+        <h4>Valeurs récupérées :</h4>
+        <p><strong>Catégories sélectionnées :</strong> <span id="selectedTags"></span></p>
+        <p><strong>Description :</strong> <span id="content"></span></p>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+        $('#tags').select2({
+            tags: true,
+            placeholder: "Ajoutez ou sélectionnez des catégories",
+            allowClear: true
+        });
+        $('#summernote').summernote({
+            placeholder: 'Hello stand alone ui',
+            tabsize: 2,
+            height: 120,
+            toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture', 'video']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+            ]
+        });
+
+        $("#submitBtn").click(function(e) {
+            var selectedTags = $('#tags').val(); 
+            var summernoteContent = $('#summernote').summernote('code'); 
+            $('#selectedTags').text(selectedTags ? selectedTags.join(", ") : "Aucune sélection");
+            $('#content').html(summernoteContent);
+        })
+    })
+    </script>
+  </body>
+</html>
