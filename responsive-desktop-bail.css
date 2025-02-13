@@ -26,14 +26,29 @@
         flex-wrap: wrap !important;
     }
 
-    /* .label-tabs-bail span {
+    .row-tabs-bail {
+        display: flex;
+        flex-direction: column !important;
+        align-items: start !important;
+    }
+
+    .label-tabs-bail {
+        /* flex: 1 !important; */
+        width: 100% !important;
+        /* background: red; */
+    }
+
+    .label-tabs-bail span {
         width: max-content;
         padding-inline: 0 !important;
         margin-bottom: 0.9em !important;
         margin-left: 0 !important;
-     
-    } */
+        text-wrap:  wrap !important;
 
+    }
+/* .h2-bail-label{
+    font-size: 1.2em !important;
+} */
 }
 
 @media screen and (min-width: 1600px) {
