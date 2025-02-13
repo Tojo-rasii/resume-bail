@@ -204,7 +204,7 @@
                                     </div>
                                     <div class="col-tabs-bail">
                                         <figure class="title-bail-label">
-                                            <h2 class="h2-bail-label">Consistance du logement</h2>
+                                            <h2 class="h2-bail-label h2-mobile-uppercase">Consistance du logement</h2>
                                         </figure>
                                         <figure class="row-tabs-bail">
                                             <label class="label-tabs-bail">
@@ -248,7 +248,7 @@
 
                                             </label>
 
-                                           
+
                                         </figure>
 
 
@@ -260,12 +260,13 @@
                                                 <!-- <input type="text" id="input-tags-autre-partie-logement" placeholder=""> -->
                                                 <div class="input-area-label">
                                                     <div id="tags-container-autre-partie-logement"></div>
-                                                    <input type="text" id="input-tags-autre-partie-logement" placeholder="">
+                                                    <input type="text" id="input-tags-autre-partie-logement"
+                                                        placeholder="">
                                                 </div>
                                             </label>
                                         </figure>
 
-                                        
+
                                         <figure class="row-tabs-bail">
                                             <label class="label-tabs-bail">
                                                 <!-- <div id="tags-container-element"></div> -->
@@ -327,7 +328,7 @@
                                             <label class="label-tabs-bail">
                                                 <div class="input-area-label">
 
-                                                    <input type="text" placeholder="">
+                                                    <input type="text" placeholder="Ajouter designation des locaux et équipements accessoires de l'immeuble">
                                                 </div>
 
                                             </label>
@@ -566,10 +567,17 @@ Ce dépôt ne dispensera en aucun cas le locataire du paiement du loyer et des c
 
                                 <!-- LABEL TEXT-->
                                 <div class="label-texet-tabs-bail-19" style="display: none;">
-                                    <textarea name="" rows="5" id="" style="width: 100%; white-space: wrap;">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis doloribus non
-                                    maiores assumenda totam voluptate ipsum corrupti dignissimos natus! Sint?
-                                </textarea>
+                                    <textarea name="" rows="9" id="" style="width: 100%; white-space: wrap;">
+A défaut de paiement de tout ou partie du loyer, des charges ou du dépôt de garantie et deux mois après commandement de
+payer demeuré infructueux, le présent contrat sera résilié immédiatement et de plein droit. Le bailleur pourra, dans le
+cas où le locataire ne quitterait pas les lieux, l’y contraindre par simple ordonnance de référé. Il est expressément
+convenu qu'en cas de paiement par chèque, le loyer, les charges et le dépôt de garantie ne seront considérés comme
+réglés qu'après encaissement du chèque, la clause résolutoire pouvant être appliquée par le bailleur au cas où le chèque
+serait sans provision.
+De même, en cas de trouble de voisinage constaté par une décision de justice, ou à défaut de production par le locataire
+d'un justificatif d'assurance couvrant ses risques locatifs, ou encore à défaut de respecter l’obligation d’user
+paisiblement des locaux loués et un mois après commandement resté infructueux, le contrat sera résilié de plein droit.
+   </textarea>
 
 
                                 </div>
@@ -606,9 +614,23 @@ Ce dépôt ne dispensera en aucun cas le locataire du paiement du loyer et des c
                                 <div class="label-texte-tabs-bail-19" style="display: none;">
                                     <div style="margin-top: 15px;">
                                         <!-- <label for="summernote" class="form-label">Description :</label> -->
-                                        <textarea id="summernote" readonly></textarea>
+                                        <textarea id="summernote">Outre toutes les obligations prévues par la loi du 6 juillet 1989 , auxquelles sont tenus le Locataire et le Bailleur :
+                                        • Le Locataire est également tenu :
+                                        - de laisser visiter, aussitôt le congé donné ou reçu, ou en cas de mise en vente, les locaux loués, deux heures par
+                                        jour les jours ouvrables (du lundi au samedi) ;
+                                        - si le logement est équipé d’une chaudière individuelle, de souscrire un contrat d’entretien annuel de celle-ci auprès
+                                        d’un professionnel qualifié et d’en justifier chaque année sur simple demande du Bailleur ;
+                                        - de ne pas sous-louer le logement sauf avec l'accord écrit du bailleur, y compris sur le prix du loyer.
+                                        • Le Bailleur est également tenu :
+                                        - de transmettre gratuitement une quittance au locataire lorsque celui-ci en fait la demande ;
+                                        - si le logement est situé dans un immeuble collectif dont le permis de construire a été délivré avant le 01/07/1997, de
+                                        tenir à la disposition du locataire, sur simple demande, le dossier amiante.
+                                        • Les Parties conviennent d’établir un état des lieux contradictoire dans les conditions de l’article 3-2 de la loi du 6
+                                        juillet 1989 , et de l’annexer au bail.
+                                        • Pour donner congé, les Parties s’obligent à respecter les règles légales
+</textarea>
                                     </div>
-                                
+
                                 </div>
                             </article>
                         </form>
@@ -623,7 +645,7 @@ Ce dépôt ne dispensera en aucun cas le locataire du paiement du loyer et des c
         $('#summernote').summernote({
             placeholder: 'Hello stand alone ui',
             tabsize: 2,
-            height: 120,
+            height: 200,
             toolbar: [
                 ['style', ['style']],
                 ['font', ['bold', 'underline', 'clear']],
@@ -634,12 +656,7 @@ Ce dépôt ne dispensera en aucun cas le locataire du paiement du loyer et des c
                 ['view', ['fullscreen', 'codeview', 'help']]
             ]
         });
-        $("#submitBtn").click(function (e) {
-            var selectedTags = $('#tags').val();
-            var summernoteContent = $('#summernote').summernote('code');
-            $('#selectedTags').text(selectedTags ? selectedTags.join(", ") : "Aucune sélection");
-            $('#content').html(summernoteContent);
-        })
+       
     </script>
 
     <script src="script-bail.js"></script>

@@ -61,15 +61,19 @@ textarea {
 }
 
 textarea {
-    line-height: 1.5;
-    /* Augmente l'espacement entre les lignes */
+    line-height: 1.8em;
+    /* Espacement entre les lignes */
     padding: 10px;
+    /* Espacement intérieur */
     font-size: 0.9em;
-    /* Ajoute de l'espace à l'intérieur du textarea */
+    /* Taille du texte */
     text-align: justify;
     /* Justifie le texte si besoin */
     resize: none;
-    /* Empêche le redimensionnement si nécessaire */
+    /* Empêche le redimensionnement */
+    /* Hauteur minimale */
+    display: block;
+    /* Évite les comportements indésirables */
 }
 
 .italic {
