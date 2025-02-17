@@ -12,12 +12,16 @@
     font-size: 1.4em;
     color: #fff;
     font-weight: 500;
+
 }
 
 .section-tabs-bail-main-19 {
     position: relative;
 }
 
+.v-pdf-mob-desk{
+    display: none;
+}
 
 
 /* TABS */
@@ -60,6 +64,7 @@
     padding: 0.8em 2em;
 }
 
+
 .aside-article-link-tabs-19 p:hover {
     background: rgb(231, 231, 231);
 }
@@ -75,7 +80,7 @@
     font-weight: 600;
 }
 
-.aside-article-link-tabs-19 a.active-bail-tabs p:before {
+.aside-article-link-tabs-19 a.active-bail-tabs p:after {
     content: '';
     padding: 0.4em;
     background: rgba(3, 168, 78, 1);

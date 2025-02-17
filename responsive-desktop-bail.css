@@ -5,11 +5,46 @@
 
     .aside-bail-19 {
         flex: 1;
-        height: 100%;
-        position: initial !important;
-        margin-bottom: 1.5em;
+        /* height: 100%; */
+        position: fixed !important;
+        top: auto !important;
+        bottom: 0 !important;
+        /* margin-bottom: 1.5em; */
         width: 100% !important;
+        background: #fff;
+        z-index: 99999999;
+        height: max-content !important;
     }
+.aside-article-link-tabs-19{
+        display: flex;
+        flex-direction: row !important;
+}
+.aside-article-link-tabs-19 a.active-bail-tabs p::after {
+    content: '';
+    padding: 0.2em !important;
+    position: absolute;
+    top: 0 !important;
+margin-top: -1em;
+    height: 0.2em !important;
+    width: 100%;
+}
+
+.aside-article-link-tabs-19 p::before {
+    content: 're';
+    padding: 0.7em;
+    background: green;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0.5em;
+    margin-right: 0.5em;
+}
+.aside-article-link-tabs-19 p {
+    /* display: none; */
+    vertical-align: middle;
+    /* background: red; */
+    padding: 1.5em 0.9em !important;
+    text-wrap: nowrap;
+}
 
     .row-button-bail button {
         display: flex;
@@ -46,7 +81,36 @@
         text-wrap: wrap !important;
 
     }
+    .header-bail-19 {
+ width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+    .v-pdf-mob-desk{
+    display: block !important;
+    height: max-content;
+}
 
+
+    .v-pdf-mob{
+        display: none !important;
+    }
+
+    .aside-article-button-tabs-19 {
+    display: flex;
+    flex-direction: row !important;
+    /* background: red; */
+    width: 100% !important;
+  
+}
+    .aside-article-button-tabs-19 div{
+
+    width: 100% !important;
+  
+}
     .h2-mobile-uppercase{
         text-transform: uppercase;
     }
