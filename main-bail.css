@@ -269,6 +269,7 @@ flex-wrap: wrap;
 
 .label-tabs-bail input:read-only {
     cursor: pointer;
+    background-color: none !important;
 }
 
 .label-tabs-bail textarea {
