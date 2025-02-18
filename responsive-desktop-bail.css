@@ -20,6 +20,7 @@
         z-index: 99999999;
         height: max-content !important;
         padding: 0 !important;
+        padding-bottom: 1em !important;
     }
 .aside-article-link-tabs-19{
         display: flex;
@@ -41,6 +42,14 @@ margin-top: -1em;
        color: #fff;
 }
 
+.main-bail-tabs-19 {
+    /* background: red; */
+    min-height: 510vh !important;
+    flex: 1;
+    align-self: start;
+    width: 100%;
+}
+
 .aside-article-link-tabs-19 p::before {
     content: 're';
     padding: 0.7em;
@@ -57,13 +66,16 @@ margin-top: -1em;
     /* text-wrap: nowrap;  */
     padding: 0.8em 0.8em !important;display: flex;
         flex-direction: row;
-        gap: 0.4em;
+        gap: 0.3em;
         align-items: center;
     /* background: yellow; */
 }
 .aside-article-link-tabs-19 a.active-bail-tabs p span{
            display: block !important;
 color: rgba(3, 168, 78, 1);
+}
+.aside-article-link-tabs-19 a.active-bail-tabs p{
+        border-right: 1px solid rgb(235, 235, 235);
 }
 
 .aside-article-link-tabs-19 p span{
