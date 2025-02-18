@@ -11,7 +11,7 @@
     .aside-bail-19 {
         flex: 1;
         /* height: 100%; */
-        position: fixed !important;
+        position: sticky !important;
         top: auto !important;
         bottom: 0 !important;
         /* margin-bottom: 1.5em; */
@@ -21,6 +21,7 @@
         height: max-content !important;
         padding: 0 !important;
         padding-bottom: 1em !important;
+        margin-top: 1em !important;
     }
 .aside-article-link-tabs-19{
         display: flex;
@@ -44,7 +45,8 @@ margin-top: -1em;
 
 .main-bail-tabs-19 {
     /* background: red; */
-    min-height: 350vh !important;
+    height: 100% !important;
+    min-height: 100% !important;
     flex: 1;
     align-self: start;
     width: 100%;
@@ -94,7 +96,7 @@ color: rgba(3, 168, 78, 1);
 
     .row-bail {
         display: flex;
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
         flex-wrap: wrap !important;
     }
 
