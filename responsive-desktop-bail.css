@@ -1,3 +1,8 @@
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 0.6em !important;
+    }
+}
 @media screen and (max-width: 930px) {
     html {
         font-size: 0.8em;
@@ -14,10 +19,13 @@
         background: #fff;
         z-index: 99999999;
         height: max-content !important;
+        padding: 0 !important;
     }
 .aside-article-link-tabs-19{
         display: flex;
         flex-direction: row !important;
+        justify-content: space-between;
+        padding: 0;
 }
 .aside-article-link-tabs-19 a.active-bail-tabs p::after {
     content: '';
@@ -27,23 +35,40 @@
 margin-top: -1em;
     height: 0.2em !important;
     width: 100%;
+    border-radius: 0 !important;
+}.aside-article-link-tabs-19 a.active-bail-tabs p::before {
+       background: rgba(3, 168, 78, 1) !important;
+       color: #fff;
 }
 
 .aside-article-link-tabs-19 p::before {
     content: 're';
     padding: 0.7em;
-    background: green;
+    background: rgba(217, 217, 217, 1);
     text-transform: uppercase;
-    color: #fff;
+    color: rgba(0, 0, 0, 1);
     border-radius: 0.5em;
-    margin-right: 0.5em;
+    /* margin-right: 0.5em; */
 }
 .aside-article-link-tabs-19 p {
     /* display: none; */
-    vertical-align: middle;
     /* background: red; */
-    padding: 1.5em 0.9em !important;
-    text-wrap: nowrap;
+    /* padding: 1.5em 0.9em !important; */
+    /* text-wrap: nowrap;  */
+    padding: 0.8em 0.8em !important;display: flex;
+        flex-direction: row;
+        gap: 0.4em;
+        align-items: center;
+    /* background: yellow; */
+}
+.aside-article-link-tabs-19 a.active-bail-tabs p span{
+           display: block !important;
+color: rgba(3, 168, 78, 1);
+}
+
+.aside-article-link-tabs-19 p span{
+    display: none;
+    margin-left: 0.5em;
 }
 
     .row-button-bail button {
@@ -87,7 +112,7 @@ margin-top: -1em;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 1em;
+    gap: 1em ;
 }
     .v-pdf-mob-desk{
     display: block !important;
