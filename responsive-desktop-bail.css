@@ -85,7 +85,13 @@ color: rgba(3, 168, 78, 1);
     display: none;
     margin-left: 0.5em;
 }
+.label-texte-tabs-bail-19, .label-texet-tabs-bail-19{
+    display:  block !important;
+}
 
+:is(#icon, #icon-last){
+    display: none;
+}
     .row-button-bail button {
         display: flex;
         flex-direction: row;
