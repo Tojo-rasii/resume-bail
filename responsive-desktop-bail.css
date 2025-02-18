@@ -62,6 +62,27 @@ margin-top: -1em;
     border-radius: 0.5em;
     /* margin-right: 0.5em; */
 }
+.aside-article-link-tabs-19 a:nth-child(1) p::before {
+    content: 'DP';
+}
+.aside-article-link-tabs-19 a:nth-child(2) p::before {
+    content: 'OC';
+}
+.aside-article-link-tabs-19 a:nth-child(3) p::before {
+    content: 'DPE';
+}
+.aside-article-link-tabs-19 a:nth-child(4) p::before {
+    content: 'CF';
+}
+.aside-article-link-tabs-19 a:nth-child(5) p::before {
+    content: 'G';
+}
+.aside-article-link-tabs-19 a:nth-child(6) p::before {
+    content: 'CR';
+}
+.aside-article-link-tabs-19 a:nth-child(7) p::before {
+    content: 'OP';
+}
 .aside-article-link-tabs-19 p {
     /* display: none; */
     /* background: red; */
