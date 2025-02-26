@@ -139,3 +139,40 @@ inputFieldEquipement.addEventListener("keydown", function (event) {
         addTagEquipement(inputFieldEquipement.value);
     }
 });
+
+
+
+
+// DESIGNATION 
+const inputFieldDesignation = document.getElementById("input-designation");
+const tagsContainerDesignation = document.getElementById("tags-container-designation");
+
+function addTagDesignation(textDesignation) {
+    textDesignation = textDesignation.trim();
+    if (textDesignation === "" || isDuplicate(textDesignation)) return; // Empêche les doublons et les entrées vides
+
+    const tagDesignation = document.createElement("p");
+    tagDesignation.classList.add("tagDesignation");
+    tagDesignation.innerHTML = `${textDesignation} <i class="close">&times;</i>`;
+
+    // Supprimer le tagDesignation au clic sur "X"
+    tagDesignation.querySelector(".close").addEventListener("click", function () {
+        tagDesignation.remove();
+    });
+
+    tagsContainerDesignation.appendChild(tagDesignation);
+    inputFieldDesignation.value = ""; // Efface l'input après l'ajout
+}
+
+function isDuplicate(textDesignation) {
+    const tagsDesignation = document.querySelectorAll(".tagDesignation");
+    return [...tagsDesignation].some(tag => tag.textContent.trim() === textDesignation);
+}
+
+// Ajouter via la touche Enter
+inputFieldDesignation.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        event.preventDefault(); // Empêche le saut de ligne
+        addTagDesignation(inputFieldDesignation.value);
+    }
+});

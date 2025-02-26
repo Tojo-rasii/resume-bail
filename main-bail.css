@@ -269,7 +269,7 @@ flex-wrap: wrap;
 
 .label-tabs-bail input:read-only {
     cursor: pointer;
-    background-color: none !important;
+    background: #fff !important;
 }
 
 .label-tabs-bail textarea {
@@ -369,7 +369,7 @@ flex-wrap: wrap;
 }
 
 /* select check */
-:is(#tags-container, #tags-container-autre-partie-logement, #tags-container-element, #tags-container-equipement) {
+:is(#tags-container, #tags-container-autre-partie-logement, #tags-container-element, #tags-container-equipement, #tags-container-designation) {
     display: flex;
     flex-direction: row;
     /* position: absolute;
@@ -381,7 +381,7 @@ flex-wrap: wrap;
 
 
 
-:is(.tag, .tagAutre, .tagElement, .tagEquipement) {
+:is(.tag, .tagAutre, .tagElement, .tagEquipement, .tagDesignation) {
     display: flex;
     align-items: center;
     background: rgba(204, 204, 204, 1);
@@ -394,7 +394,7 @@ flex-wrap: wrap;
     gap: 1em;
 }
 
-:is(.tag, .tagAutre, .tagElement, .tagEquipement) .close {
+:is(.tag, .tagAutre, .tagElement, .tagEquipement, .tagDesignation) .close {
     /* margin-left: 8px; */
     cursor: pointer;
     font-weight: bold;
