@@ -389,7 +389,7 @@ flex-wrap: wrap;
     padding: 5px 10px;
     border-radius: 15px;
     margin: 2px;
-    font-size: 14px;
+    /* font-size: 14px; */
     width: max-content;
     gap: 1em;
 }
