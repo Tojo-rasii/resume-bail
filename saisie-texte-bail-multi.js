@@ -175,6 +175,5 @@ inputFieldDesignation.addEventListener("keydown", function (event) {
         event.preventDefault(); // Empêche le saut de ligne
         addTagDesignation(inputFieldDesignation.value);
     }
-console.log("Touche pressée :", event.key, " | Code :", event.code, " | KeyCode :", event.keyCode);
 });
 
