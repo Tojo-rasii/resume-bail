@@ -171,7 +171,7 @@ function isDuplicate(textDesignation) {
 
 // Ajouter via la touche Enter
 inputFieldDesignation.addEventListener("keydown", function (event) {
-    if (event.key === "Enter" || event.key === "Done" || event.key === "Go" || event.key === "Next") {
+    if (event.key === "Enter") {
         event.preventDefault(); // Empêche le saut de ligne
         addTagDesignation(inputFieldDesignation.value);
     }
